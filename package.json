@@ -1,0 +1,36 @@
+{
+  "name": "consoloid-os",
+  "version": "0.1.0",
+  "dependencies": {
+    "fs-ext": "*"
+  },
+  "description": "A file, process and other operating system related management module for Consoloid",
+  "homepage": "https://github.com/agmen-hu/consoloid-os",
+  "license": "MIT",
+  "author": {
+    "name": "dev.agmen.hu Ltd.",
+    "email": "support@agmen.hu",
+    "url": "https://agmen.hu"
+  },
+  "contributors": [
+    {
+      "name": "Szilard Novaki",
+      "email": "novaki@agmen.hu"
+    },
+    {
+      "name": "Attila Hendrich",
+      "email": "hendricha@agmen.hu"
+    },
+    {
+      "name": "Gabor Kiss",
+      "email": "nevi@agmen.hu"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/agmen-hu/consoloid-os/issues"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/agmen-hu/consoloid-os"
+  }
+}
