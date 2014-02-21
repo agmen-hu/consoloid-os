@@ -3,6 +3,7 @@ require('../TextFileDataSource.js');
 
 require('consoloid-framework/Consoloid/Test/UnitTest');
 
+
 describeUnitTest('Consoloid.OS.File.TextFileDataSource', function() {
   var
     dataSource,
@@ -21,13 +22,16 @@ describeUnitTest('Consoloid.OS.File.TextFileDataSource', function() {
     create = sinon.stub();
     create.withArgs("Consoloid.OS.File.TextFile").returns(textFile);
 
-    dataSource = env.create(Consoloid.OS.File.TextFileDataSource, {
+    defineClass('Consoloid.OS.File.TextFileDataSourceMocked', 'Consoloid.OS.File.TextFileDataSource', {
+      create: create
+    });
+
+    dataSource = env.create(Consoloid.OS.File.TextFileDataSourceMocked, {
       fileName: "/foo/bar",
       textFileOptions: {
         encoding: "utf8",
         chunkSize: 2048
-      },
-      create: create
+      }
     });
 
     callbackSpy = sinon.spy();
