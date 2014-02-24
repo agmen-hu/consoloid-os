@@ -2,7 +2,8 @@
   "name": "consoloid-os",
   "version": "0.1.1",
   "dependencies": {
-    "fs-ext": "*"
+    "fs-ext": "*",
+    "consoloid-framework": "*"
   },
   "description": "A file, process and other operating system related management module for Consoloid",
   "homepage": "https://github.com/agmen-hu/consoloid-os",
