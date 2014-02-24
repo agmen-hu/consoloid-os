@@ -33,5 +33,8 @@
   "repository" : {
     "type" : "git",
     "url" : "git://github.com/agmen-hu/consoloid-os"
-  }
+  },
+  "scripts": {
+    "test": "./runtests"
+  },
 }
