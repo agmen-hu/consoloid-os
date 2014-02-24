@@ -101,7 +101,7 @@ defineClass('Consoloid.OS.File.TextFile', 'Consoloid.OS.File.AbstractFileDecorat
   __findLines: function(chunkReaderObject, readString)
   {
     var foundLineCounter = 0;
-    $.each(readString, (function(index, value) {
+    readString.split('').forEach(function(value, index) {
       if (value == this.lineBreak) {
         chunkReaderObject.nextChunkFragment = "";
         foundLineCounter++;
@@ -110,7 +110,7 @@ defineClass('Consoloid.OS.File.TextFile', 'Consoloid.OS.File.AbstractFileDecorat
       } else {
         chunkReaderObject.nextChunkFragment += value;
       }
-    }).bind(this));
+    }, this);
 
     return foundLineCounter;
   },
