@@ -42,7 +42,6 @@ defineClass('Consoloid.OS.File.RemoteClientFile', 'Consoloid.OS.File.FileInterfa
   __retrivedFileInfos: function(fileInfos, id, callback)
   {
     if (!(id in fileInfos)) {
-      console.log("ITT", id, fileInfos)
       callback("Unknown file");
       return;
     }
